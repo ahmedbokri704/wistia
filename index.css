@@ -125,25 +125,118 @@ body {
     margin-left: 100px;
     color: white;
 }
-.card{
-    display: flex;  
-    margin-top: 50px;   
-}
-.card1{
+.container-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: 100px;
+    justify-content: space-around;
+  }
+  
+  .container-flex > div > img {
+    width: 50%;
+  }
+  #slide {
+    background-color: #c896a5;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    height: 100%;
+    flex-direction: column;
+    padding: 0 130px;
+  }
+  #slide button {
+    max-width: 200px;
+    padding: 20px 15px;
+    font-weight: 600;
+    font-size: 18px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  section#slide h1 span {
+    color: white;
+  }
+  #slide h1 {
+    font-size: 41px;
+    font-weight: 400;
+  }
+  .cards-padding {
+    padding: 5%;
+    height: 300px;
+  }
+  section#section2 svg {
+    height: 55px;
+    width: 55px;
+  }
+  section#section2 p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    width: 100%;
+    margin: auto;
+  }
+  #section2 button:hover {
+    background-color: white;
+  }
+  #yellow {
     background-color: rgb(254, 210, 74);
-    font-size: x-large;
-    padding-right: 20px;
-}
-.card2{
+  }
+  #yellow svg {
+    color: #3ea9f5;
+  }
+  #btn-yellow:hover ~ svg.IconChartGrowth path {
+    color: white;
+    fill: white;
+  }
+  #btn-blue:hover ~ svg.IconBookChapter path {
+    color: white;
+    fill: white;
+  }
+  #btn-green:hover ~ svg.IconLaptop path {
+    color: white;
+    fill: white;
+  }
+  svg.Icon.IconLaptop {
+    color: rgb(231, 184, 199);
+  }
+  svg.Icon.IconBookChapter {
+    color: rgb(254, 210, 74);
+  }
+  #green {
     background-color: rgb(81, 194, 159);
-    font-size: x-large;
-    padding-right: 30px;
-}
-.card3{
-    background-color: rgb(62, 169, 245);
-    font-size: x-large;
-    padding-right: 100px;
-}
+  }
+  #blue {
+    background-color: #3ea9f5;
+  }
+  section#section2 div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  section#section2 div h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    width: 100%;
+    margin: 15px 0px 10px;
+  }
+  
+  #section2 button {
+    width: 160px;
+    background: transparent;
+    border: 2px solid #ffffffab;
+    border-radius: 5px;
+    color: black;
+    padding: 15px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 18px;
+    order: 3;
+  }
+
 .sponsors{
     display: flex;
     justify-content: space-between;
@@ -151,79 +244,41 @@ body {
     margin-top: 100px;
 }
 
-.card1button{
-    font-size: 15px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    margin-right: 75px;
-    margin-left: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius:4px;
+.link-article1 {
+  background-color: rgb(238, 183, 193);
+  
 }
-.card2button{
-    font-size: 15px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    margin-right: 75px;
-    margin-left: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius:4px;
+a.link-article1 {
+  position: relative;
+  display: inline-block;
 }
-.card3button{
-    font-size: 15px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    margin-right: 75px;
-    margin-left: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius:4px;
+.img1:hover{
+opacity: 0.5;
 }
-.card1text{
-    margin-top: 40px;
-    margin-bottom: 5px;
-    margin-right: 50px;
-    margin-left: 30px;
+.link-article2{
+  background-color: rgb(178, 245, 178);
+  
 }
-.card2text{
-    margin-top: 40px;
-    margin-bottom: 5px;
-    margin-right: 50px;
-    margin-left: 30px;
+a.link-article2 {
+  position: relative;
+  display: inline-block;
 }
-.card3text{
-    margin-top: 40px;
-    margin-bottom: 5px;
-    margin-right: 20px;
-    margin-left: 20px;
+.img2:hover{
+opacity: 0.5;
 }
-.txt{
-    color: white;
-    font-weight:normal;
+.link-article3 {
+  background-color: rgb(104, 104, 248);
+  
 }
-.icon1{
-    color:rgb(62, 169, 245);
-    padding-top: 40px;
-    padding-left: 40px;
+a.link-article3 {
+  position: relative;
+  display: inline-block;
 }
-.icon2{
-    color:rgb(231, 184, 199);
-    padding-top: 40px;
-    padding-left: 40px;
+.img3:hover{
+opacity: 0.5;
 }
-.icon3{
-    color:rgb(254, 210, 74);
-    padding-top: 40px;
-    padding-left: 40px;
-}
+
+
 .picture{
     display: flex;
     justify-content: space-between;
@@ -304,18 +359,9 @@ a:hover {
     color: rgb(59, 149, 214);
   }
   
-.img1:hover{
-    background-color:rgba(62, 169, 245, 0.8000);
-    opacity: 0.5;
-    
-}
-.img2:hover{
-    background-color:#45A186;
-    opacity: 0.5;
-}
-.img3:hover{
-    background-color:#B499A7;
-    opacity: 0.5;
+
+.bl{
+    color: black;
 }
 
 .W{
